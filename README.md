@@ -24,6 +24,20 @@ Please give a 🌟 Star if you like this project!
 
 ## Recent updates
 
+25/02/27
+
+- Added: Citations in research report
+- Improved: Chinese output layout
+- Improved: Increased max width and breadth in the form
+- Fixed: Text overflow issues for web search node details
+- Fixed: general UI style issues
+
+25/02/24
+
+- Added: Fullscreen mode for the search flow. This helps you to focus on the search process better.
+- Changed: "Export PDF" now uses the browser's native print ability. This fixes layout issues and emilinates font problems.
+- Fixed: "Context Size" setting are not correctly applied
+
 25/02/22
 
 - Added: NL/Dutch translation
@@ -47,6 +61,9 @@ Please give a 🌟 Star if you like this project!
 - Refactored the search visualization using VueFlow
 - Style & bug fixes
 
+<details>
+<summary>Older updates</summary>
+
 25/02/15
 
 - Added AI providers DeepSeek, OpenRouter and Ollama; Added web search provider Firecrawl
@@ -65,6 +82,7 @@ Please give a 🌟 Star if you like this project!
 - Supported searching in different languages
 - Added Docker support
 - Fixed "export as PDF" issues
+</details>
 
 ## How to use
 
