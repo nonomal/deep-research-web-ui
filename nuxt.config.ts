@@ -19,6 +19,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/version.json': {
       cors: true,
+      cache: false,
     },
   },
 
@@ -61,5 +62,8 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-11-01',
+  future: {
+    compatibilityVersion: 4,
+  },
   devtools: { enabled: true },
 })

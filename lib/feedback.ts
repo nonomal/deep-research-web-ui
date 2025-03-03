@@ -4,6 +4,8 @@ import { zodToJsonSchema } from 'zod-to-json-schema'
 
 import { languagePrompt, systemPrompt } from './prompt'
 import { useAiModel } from '~/composables/useAiProvider'
+import { parseStreamingJson, type DeepPartial } from '~~/utils/json'
+import { throwAiError } from '~~/utils/errors'
 
 type PartialFeedback = DeepPartial<z.infer<typeof feedbackTypeSchema>>
 
@@ -37,8 +39,7 @@ export function generateFeedback({
     system: systemPrompt(),
     prompt,
     onError({ error }) {
-      console.error(`generateFeedback`, error)
-      throw error
+      throwAiError('generateFeedback', error)
     },
   })
 
